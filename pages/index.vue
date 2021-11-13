@@ -4,8 +4,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { books } from '@/store'
 
 export default Vue.extend({
-  layout: 'ppv'
+  layout: 'ppv',
+  asyncData() {
+    console.log(books.books)
+  }
 })
 </script>
