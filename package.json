@@ -12,13 +12,15 @@
   },
   "dependencies": {
     "-": "0.0.1",
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/style-resources": "^1.2.1",
     "D": "^1.0.0",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.15.1",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "vuex-module-decorators": "^1.0.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
