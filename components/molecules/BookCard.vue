@@ -4,7 +4,7 @@
 
     <div class="text">
       <h4> {{ book.title }} </h4>
-      <h4> {{ book.author }} </h4>
+      <p> {{ book.author }} </p>
     </div>
   </NuxtLink>
 </template>

@@ -27,8 +27,9 @@ export default class Books extends VuexModule {
   }
 
   @Action
+  ({rawError: false})
   public async index() {
-    const books =  await $axios.$get('/books')
+    const books = await $axios.$get('/books')
     this.context.commit('SET_ALL', books)
   }
   public async show({ id }: Show) {
