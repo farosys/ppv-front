@@ -22,18 +22,21 @@ export default class Books extends VuexModule {
   private SET_ALL(books: Book[]) {
     this.books = books
   }
+
+  @Mutation
   private SET_SINGLE(book: Book) {
     this.book = book
   }
 
   @Action
-  ({rawError: false})
   public async index() {
     const books = await $axios.$get('/books')
     this.context.commit('SET_ALL', books)
   }
+
+  @Action
   public async show({ id }: Show) {
-    const book = await $axios.$get(`/books${id}`)
+    const book = await $axios.$get(`/books/${id}`)
     this.context.commit('SET_SINGLE', book)
   }
 }
