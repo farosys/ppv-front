@@ -1,9 +1,15 @@
 <template>
-  <Tutorial/>
+  <HomeTemplate />
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import { books } from '@/store'
 
-export default Vue.extend({})
+export default Vue.extend({
+  layout: 'ppv',
+  async asyncData() {
+    await books.index()
+  }
+})
 </script>
