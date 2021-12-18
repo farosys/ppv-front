@@ -10,6 +10,18 @@ export default Vue.extend({
   layout: 'ppv',
   async asyncData({ params }) {
     await books.show({ id: params.id as any })
+  },
+  head() {
+    return {
+      title: books.$single.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: books.$single.description
+        }
+      ]
+    }
   }
 })
 </script>
