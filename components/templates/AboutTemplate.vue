@@ -9,5 +9,6 @@
 .about-template {
   display: grid;
   grid-gap: 4rem;
+  padding-bottom: 10.9rem;
 }
 </style>

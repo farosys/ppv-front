@@ -25,6 +25,7 @@
       ]
     },
     "types": [
+      "vuetify",
       "@nuxt/types",
       "@types/node"
     ]
