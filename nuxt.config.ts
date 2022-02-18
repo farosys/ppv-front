@@ -53,7 +53,8 @@ export default {
   },
 
   axios: {
-    baseURL: 'http://localhost:3004'
+    // baseURL: 'http://localhost:3004',
+    baseURL: 'https://portalpalavraviva.com.br/api/'
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
