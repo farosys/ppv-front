@@ -2,7 +2,7 @@
   <div class="book-info">
     <h2 class="book-title">{{ $book.title }}</h2>
 
-    <div class="book-description" v-html="$book.description"></div>
+    <div class="book-description" v-html="$book.resume"></div>
 
     <BookCategories />
 
@@ -10,7 +10,7 @@
       <ul>
         <li>
           <p>Lançamento</p>
-          <p>{{ $book.releaseDate }}</p>
+          <p>{{ $book.created_at }}</p>
         </li>
         <li>
           <p>Autor</p>
@@ -28,7 +28,7 @@ import { books } from '@/store'
 export default Vue.extend({
   computed: {
     $book() {
-      return books.$single
+      return books.$single.article
     }
   }
 })

@@ -16,5 +16,5 @@ export interface Book {
   description: string,
   cover: string,
   categories: Category[],
-  pages: Page[]
+  pages: Page[],
 }

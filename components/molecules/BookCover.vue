@@ -1,10 +1,10 @@
 <template>
   <div class="book-cover">
-    <img :src="$book.cover" :alt="`Capa do livro ${$book.title}`">
+    <img :src="`https://portalpalavraviva.com.br/storage/covers/${$book.cover}`" :alt="`Capa do livro ${$book.title}`">
 
-    <NuxtLink class="read-book" :to="`/book/${$book.id}/read`">
+    <a class="read-book" :href="`https://portalpalavraviva.com.br/storage/books/${$book.book}`" target="_blank">
       Ler livro
-    </NuxtLink>
+    </a>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import { books } from '@/store'
 export default Vue.extend({
   computed: {
     $book() {
-      return books.$single
+      return books.$single.article
     }
   }
 })

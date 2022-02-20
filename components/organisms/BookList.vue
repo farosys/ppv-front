@@ -1,6 +1,6 @@
 <template>
   <div class="book-list">
-    <BookCard v-for="book in $books" :key="book.id" :book="book" />
+    <BookCard v-for="book in $books.articles" :key="book.id" :book="book" />
   </div>
 </template>
 

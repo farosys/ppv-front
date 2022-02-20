@@ -1,6 +1,6 @@
 <template>
   <NuxtLink class="book-card" :to="`/book/${book.id}`">
-    <img :src="book.cover" :alt="`Capa do livro ${book.title}`">
+    <img :src="`https://portalpalavraviva.com.br/storage/covers/${book.cover}`" :alt="`Capa do livro ${book.title}`">
 
     <div class="text">
       <h4> {{ book.title }} </h4>

@@ -7,7 +7,7 @@
       <v-col cols="12" sm="8">
         <div class="pt-4 px-8">
           <DetailsMaterial :livro="livro"></DetailsMaterial>
-          <BtnCapa :link="livro.cover"></BtnCapa>
+          <BtnCapa :link="`https://portalpalavraviva.com.br/storage/covers/${livro.cover}`"></BtnCapa>
         </div>
       </v-col>
     </v-row>

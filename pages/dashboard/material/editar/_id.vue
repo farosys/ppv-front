@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    layout: "dashboard",
+  layout: "dashboard",
   data: () => ({
     items: [
       { text: "Dashboard", to: "/dashboard/home" },
@@ -16,6 +16,9 @@ export default {
       { text: "Editar", disabled: true },
     ],
   }),
+  beforeCreate(){
+    this.$router.push({path: '/dashboard/material/listar'})
+  }
 };
 </script>
 

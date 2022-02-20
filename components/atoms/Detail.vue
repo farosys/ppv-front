@@ -16,7 +16,8 @@ export default {
     data: () => ({
         keys: {
             title: 'Título',
-            description: 'Resumo',
+            slug: 'Slug',
+            resume: 'Resumo',
             categories: 'Categoria',
             inicio: 'Início',
             fim: 'Fim',

@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     getMaterial() {
-      this.livro = books.$single;
+      this.livro = books.$single.article;
     }
   }
 };
