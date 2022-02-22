@@ -1,5 +1,5 @@
 <template>
-  <v-menu offset-y transition="slide-y-transition">
+  <v-menu offset-y transition="slide-y-transition" min-width="123">
     <template #[`activator`]="{ on, attrs }">
       <v-btn icon v-on="on" v-bind="attrs">
         <v-icon>mdi-account-arrow-down</v-icon>

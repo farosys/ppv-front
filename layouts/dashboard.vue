@@ -28,10 +28,23 @@
 </template>
 
 <script>
+import { users } from '~/store';
 export default {
   data: () => ({
     showDrawer: true,
   }),
+  created() {
+    this.getUserLog()
+  },
+  methods: {
+    async getUserLog() {
+      if (window.localStorage.userLog) {
+        const id = window.localStorage.userLog
+        const user = await this.$axios.$get(`users/${id}`)
+        users.login(user)
+      }
+    }
+  }
 };
 </script>
 
